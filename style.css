@@ -1,0 +1,75 @@
+/* variables */
+:root {
+ --vert : hsl(75, 94%, 57%);
+ --blanche : hsl(0, 0%, 100%);
+ --Grey7 : hsl(0, 0%, 20%);
+ --Grey8 : hsl(0, 0%, 12%);
+ --Grey9 : hsl(0, 0%, 8%);
+}
+/* end variables */
+body {
+    /* position: relative; */
+    background-color: var(--Grey9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    /* position: relative; */
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items : center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--Grey8);
+    border-radius: 10px;
+    /* height: calc(100vh - 100px); */
+}
+@media (max-width: 375px) {
+    .container {
+        width: 300px;
+    }
+}
+.container img {
+    border-radius: 50%;
+    width: 100px;
+}
+.container h2 {
+    color: var(--blanche);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.container h3 {
+    margin: 0;
+    color: var(--vert);
+    font-size: 16px;
+}
+.container p {
+    color: var(--blanche);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.container .links {
+    width: calc(100% - 50px);
+}
+.container .links .box {
+    background-color: var(--Grey7);
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+    transition: .3s;
+}
+.container .links .box:hover {
+    background-color: var(--vert);
+    cursor: pointer;
+}
+.container .links .box:hover a {
+    color: var(--Grey9);
+}
+.container .links .box a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
